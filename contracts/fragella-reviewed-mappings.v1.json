@@ -1,0 +1,371 @@
+{
+  "mappings": {
+    "shobi-1117": {
+      "fragranticaId": "473",
+      "providerId": "Creed-Original-Santal",
+      "reason": "Reviewed exact Original Santal / Creed identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-1244": {
+      "fragranticaId": "1822",
+      "providerId": "Tom-Ford-Noir-De-Noir",
+      "reason": "Reviewed exact Noir de Noir / Tom Ford identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-1259": {
+      "fragranticaId": "1849",
+      "providerId": "Tom-Ford-Tuscan-Leather",
+      "reason": "Reviewed exact Tuscan Leather / Tom Ford identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-1262": {
+      "fragranticaId": "6386",
+      "providerId": "Tom-Ford-White-Suede",
+      "reason": "Reviewed exact White Suede / Tom Ford identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-1815": {
+      "fragranticaId": "12201",
+      "providerId": "Le-Labo-Santal-33",
+      "reason": "Reviewed exact Santal 33 / Le Labo identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-184": {
+      "fragranticaId": "8991",
+      "providerId": "Comme-Des-Garcons-Wonderwood",
+      "reason": "Reviewed exact Wonderwood / Comme des Garçons identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2093": {
+      "fragranticaId": "31396",
+      "providerId": "Penhaligon's-Halfeti",
+      "reason": "Reviewed exact Halfeti / Penhaligon's identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2108": {
+      "fragranticaId": "33574",
+      "providerId": "Ex-Nihilo-Sweet-Morphine",
+      "reason": "Reviewed exact Sweet Morphine / Ex Nihilo identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2193": {
+      "fragranticaId": "58781",
+      "providerId": "Tom-Ford-Rose-Prick",
+      "reason": "Reviewed exact Rose Prick / Tom Ford identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2213": {
+      "fragranticaId": "58538",
+      "providerId": "Roberto-Cavalli-Splendid-Vanilla",
+      "reason": "Reviewed exact Splendid-vanilla / Roberto Cavalli identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2215": {
+      "fragranticaId": "31424",
+      "providerId": "Acqua-Di-Parma-Colonia-Club",
+      "reason": "Reviewed exact Colonia Club / Acqua di Parma identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2231": {
+      "fragranticaId": "6327",
+      "providerId": "Le-Labo-Bergamote-22",
+      "reason": "Reviewed exact Bergamote 22 / Le Labo identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2232": {
+      "fragranticaId": "3678",
+      "providerId": "Le-Labo-Rose-31",
+      "reason": "Reviewed exact Rose 31 / Le Labo identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2233": {
+      "fragranticaId": "54665",
+      "providerId": "Penhaligon's-Cairo",
+      "reason": "Reviewed exact Cairo / Penhaligon's identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2240": {
+      "fragranticaId": "61523",
+      "providerId": "Penhaligon's-Halfeti-Leather",
+      "reason": "Reviewed exact Halfeti Leather / Penhaligon's identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2270": {
+      "fragranticaId": "59799",
+      "providerId": "L'Ombre-Des-Merveilles",
+      "reason": "Reviewed exact L Ombre Des Merveilles / Hermès identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2279": {
+      "fragranticaId": "51589",
+      "providerId": "Moschino-Toy-2",
+      "reason": "Reviewed exact Toy 2 / Moschino identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2295": {
+      "fragranticaId": "55770",
+      "providerId": "Boadicea-The-Victorious-Heroine",
+      "reason": "Reviewed exact Heroine / Boadicea the Victorious identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2398": {
+      "fragranticaId": "56402",
+      "providerId": "Kilian-Rolling-In-Love",
+      "reason": "Reviewed exact Rolling in Love / By Kilian identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2406": {
+      "fragranticaId": "50934",
+      "providerId": "Eleventh-Hour-Byredo",
+      "reason": "Reviewed exact Eleventh Hour / Byredo identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2408": {
+      "fragranticaId": "18021",
+      "providerId": "Montale-Intense-Cafe",
+      "reason": "Reviewed exact Intense Cafe / Montale identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2427": {
+      "fragranticaId": "65525",
+      "providerId": "Byredo-Mixed-Emotions",
+      "reason": "Reviewed exact Mixed Emotions / Byredo identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2430": {
+      "fragranticaId": "31872",
+      "providerId": "Le-Labo-The-Noir-29",
+      "reason": "Reviewed exact The Noir 29 / Le Labo identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-244": {
+      "fragranticaId": "19",
+      "providerId": "Un-Jardin-En-Mediterranee",
+      "reason": "Reviewed exact Un Jardin en Mediterranee / Hermès identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2449": {
+      "fragranticaId": "13390",
+      "providerId": "Creed-White-Flowers",
+      "reason": "Reviewed exact White Flowers / Creed identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2458": {
+      "fragranticaId": "67667",
+      "providerId": "Twilly-d'Hermes-Eau-Ginger",
+      "reason": "Reviewed exact Twilly d Hermes Eau Ginger / Hermès identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2606": {
+      "fragranticaId": "54878",
+      "providerId": "Vanilla-Vibes",
+      "reason": "Reviewed exact Vanilla Vibes / Juliette Has a Gun identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2633": {
+      "fragranticaId": "4521",
+      "providerId": "Etat-Libre-d'Orange-Putain-Des-Palaces",
+      "reason": "Reviewed exact Putain des Palaces / Etat Libre d Orange identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2713": {
+      "fragranticaId": "40461",
+      "providerId": "Juliette-Has-A-Gun-Mmmm",
+      "reason": "Reviewed exact Mmmm / Juliette Has a Gun identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2750": {
+      "fragranticaId": "10131",
+      "providerId": "Le-Labo-Another-13",
+      "reason": "Reviewed exact Another 13 / Le Labo identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2767": {
+      "fragranticaId": "53588",
+      "providerId": "Ex-Nihilo-Lust-In-Paradise",
+      "reason": "Reviewed exact Lust in Paradise / Ex Nihilo identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2768": {
+      "fragranticaId": "6334",
+      "providerId": "Le-Labo-Ambrette-9",
+      "reason": "Reviewed exact Ambrette 9 / Le Labo identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2802": {
+      "fragranticaId": "72439",
+      "providerId": "Terre-d'Hermes-Eau-Givree",
+      "reason": "Reviewed exact Terre d Hermes Eau Givree / Hermès identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2860": {
+      "fragranticaId": "74476",
+      "providerId": "Prada-Infusion-De-Vanille",
+      "reason": "Reviewed exact Infusion de Vanille / Prada identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2873": {
+      "fragranticaId": "66098",
+      "providerId": "Moschino-Toy-2-Bubble-Gum",
+      "reason": "Reviewed exact Toy 2 Bubble Gum / Moschino identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2878": {
+      "fragranticaId": "60665",
+      "providerId": "Zarkoperfume-The-Muse",
+      "reason": "Reviewed exact The-muse / ZARKOPERFUME identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2879": {
+      "fragranticaId": "71109",
+      "providerId": "Amouage-Orris-Wakan",
+      "reason": "Reviewed exact Orris Wakan / Amouage identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2970": {
+      "fragranticaId": "42702",
+      "providerId": "Penhaligon's-Savoy-Steam",
+      "reason": "Reviewed exact Savoy Steam / Penhaligon's identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-2983": {
+      "fragranticaId": "51307",
+      "providerId": "Arabian-Oud-Madawi",
+      "reason": "Reviewed exact Madawi / Arabian Oud identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3118": {
+      "fragranticaId": "59485",
+      "providerId": "Louis-Vuitton-Heures-d'Absence",
+      "reason": "Reviewed exact Heures d’Absence (2020) / Louis Vuitton identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3215": {
+      "fragranticaId": "74965",
+      "providerId": "D-By-Diesel",
+      "reason": "Reviewed exact D / Diesel identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3445": {
+      "fragranticaId": "75584",
+      "providerId": "Penhaligon's-Legacy-Of-Petra",
+      "reason": "Reviewed exact Legacy of Petra / Penhaligon's identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3526": {
+      "fragranticaId": "78578",
+      "providerId": "Tom-Ford-Cherry-Smoke",
+      "reason": "Reviewed exact Cherry Smoke / Tom Ford identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3567": {
+      "fragranticaId": "2799",
+      "providerId": "Frederic-Malle-Lipstick-Rose",
+      "reason": "Reviewed exact Lipstick Rose Eau de Parfum / Frédéric Malle identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3592": {
+      "fragranticaId": "78583",
+      "providerId": "Tom-Ford-Electric-Cherry",
+      "reason": "Reviewed exact Electric Cherry / Tom Ford identity, edition wording and inherited-note overlap. Provider audience taxonomy differs; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3630": {
+      "fragranticaId": "10244",
+      "providerId": "Xerjoff-Nio",
+      "reason": "Reviewed exact Nio / Xerjoff identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3670": {
+      "fragranticaId": "478",
+      "providerId": "Serge-Lutens-Un-Bois-Vanille",
+      "reason": "Reviewed exact Un Bois Vanille / Serge Lutens identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3923": {
+      "fragranticaId": "57835",
+      "providerId": "Penhaligon's-Babylon",
+      "reason": "Reviewed exact Babylon / Penhaligon's identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3926": {
+      "fragranticaId": "6309",
+      "providerId": "Xerjoff-Kobe",
+      "reason": "Reviewed exact Kobe / Xerjoff identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3933": {
+      "fragranticaId": "22056",
+      "providerId": "Atkinsons-Oud-Save-The-King",
+      "reason": "Reviewed exact Oud Save The King / Atkinsons identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3955": {
+      "fragranticaId": "20693",
+      "providerId": "Masque-Milano-Tango",
+      "reason": "Reviewed exact Tango / Masque Milano identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3987": {
+      "fragranticaId": "63439",
+      "providerId": "Christian-Louboutin-Loubirouge",
+      "reason": "Reviewed exact Loubirouge / Christian Louboutin identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-3988": {
+      "fragranticaId": "63440",
+      "providerId": "Christian-Louboutin-Loubiraj",
+      "reason": "Reviewed exact Loubiraj / Christian Louboutin identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4024": {
+      "fragranticaId": "44233",
+      "providerId": "Ramon-Monegal-Flamenco",
+      "reason": "Reviewed exact Flamenco / Ramón Monegal identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4092": {
+      "fragranticaId": "18719",
+      "providerId": "Penhaligon's-Vaara",
+      "reason": "Reviewed exact Vaara / Penhaligon's identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4118": {
+      "fragranticaId": "55167",
+      "providerId": "Dolce-&-Gabbana-Velvet-Oriental-Musk",
+      "reason": "Reviewed exact Velvet Oriental Musk / Dolce & Gabbana identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4185": {
+      "fragranticaId": "78735",
+      "providerId": "Kilian-Can'T-Stop-Loving-You",
+      "reason": "Reviewed exact Can t Stop Loving You / By Kilian identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4217": {
+      "fragranticaId": "2764",
+      "providerId": "Serge-Lutens-Five-O'Clock-Au-Gingembre",
+      "reason": "Reviewed exact Five O Clock Au Gingembre / Serge Lutens identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4230": {
+      "fragranticaId": "47872",
+      "providerId": "Moscow-Mule",
+      "reason": "Reviewed exact Moscow Mule / Juliette Has a Gun identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4234": {
+      "fragranticaId": "23032",
+      "providerId": "Clean-Cool-Cotton",
+      "reason": "Reviewed exact Cool Cotton / Clean identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4241": {
+      "fragranticaId": "5748",
+      "providerId": "Serge-Lutens-Nuit-De-Cellophane",
+      "reason": "Reviewed exact Nuit de Cellophane / Serge Lutens identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4349": {
+      "fragranticaId": "64560",
+      "providerId": "Penhaligon's-Halfeti-Cedar",
+      "reason": "Reviewed exact Halfeti Cedar / Penhaligon's identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4406": {
+      "fragranticaId": "80004",
+      "providerId": "Lust-For-Sun",
+      "reason": "Reviewed exact Lust for Sun / Juliette Has a Gun identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4424": {
+      "fragranticaId": "93628",
+      "providerId": "Lattafa-Eclaire",
+      "reason": "Reviewed exact Eclaire / Lattafa identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4485": {
+      "fragranticaId": "102117",
+      "providerId": "Armaf-Odyssey-Dubai-Chocolat",
+      "reason": "Reviewed exact Odyssey Dubai Chocolat / Armaf identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4528": {
+      "fragranticaId": "100411",
+      "providerId": "Tom-Ford-Bois-Pacifique",
+      "reason": "Reviewed exact Bois Pacifique / Tom Ford identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4623": {
+      "fragranticaId": "1681",
+      "providerId": "Acqua-Di-Parma-Colonia",
+      "reason": "Reviewed exact Acqua di Parma Colonia / Acqua di Parma identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-4752": {
+      "fragranticaId": "6330",
+      "providerId": "Le-Labo-Neroli-36",
+      "reason": "Reviewed exact Neroli 36 / Le Labo identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-5101": {
+      "fragranticaId": "62859",
+      "providerId": "Amouage-Meander",
+      "reason": "Reviewed exact Meander / Amouage identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-556": {
+      "fragranticaId": "46358",
+      "providerId": "Velvet-Haze-Byredo",
+      "reason": "Reviewed exact Velvet Haze / Byredo identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-771": {
+      "fragranticaId": "15949",
+      "providerId": "L'Ambre-Des-Merveilles",
+      "reason": "Reviewed exact L Ambre des Merveilles / Hermès identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-775": {
+      "fragranticaId": "18",
+      "providerId": "Un-Jardin-Sur-Le-Nil",
+      "reason": "Reviewed exact Un Jardin Sur Le Nil / Hermès identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    },
+    "shobi-926": {
+      "fragranticaId": "41717",
+      "providerId": "Roberto-Cavalli-Divine-Oud",
+      "reason": "Reviewed exact Divine Oud / Roberto Cavalli identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
+    }
+  },
+  "scope": "Explicit identity reviews, not fuzzy-match approvals. Exceptions may waive audience taxonomy only; source IDs, name, brand, concentration and note checks still apply.",
+  "version": 1
+}

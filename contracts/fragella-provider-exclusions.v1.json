@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "records": {
+    "Bleu-De-Chanel": "The 2010 Bleu de Chanel record incorrectly declares Eau de Cologne. Retain the raw response for audit; use a separately corroborated record or existing source fields.",
+    "bleu-de-chanel-parfum-chanel-for-men": "The Parfum edition incorrectly declares Eau de Parfum. Quarantine the contradictory edition metadata instead of assuming its confidence label establishes identity."
+  }
+}

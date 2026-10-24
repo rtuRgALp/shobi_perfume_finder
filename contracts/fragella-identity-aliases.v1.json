@@ -1,0 +1,87 @@
+{
+  "version": "exact-identity-v1",
+  "originalNameCorrections": {
+    "9828": { "name": "Aventus", "previousNames": ["Avent"] },
+    "33519": { "name": "Baccarat Rouge 540", "previousNames": ["Rouge 540"] }
+  },
+  "brandAliases": {
+    "Dior": ["Christian Dior"],
+    "By Kilian": ["Kilian", "Kilian Paris"],
+    "Rabanne": ["Paco Rabanne"],
+    "Bvlgari": ["Bulgari"],
+    "Estée Lauder": ["Estee Lauder"],
+    "Maison Martin Margiela": ["Maison Margiela"],
+    "Versace": ["Gianni Versace"],
+    "Dunhill": ["Alfred Dunhill"],
+    "Tiffany Co": ["Tiffany", "Tiffany & Co."],
+    "Casamorati": ["Casamorati 1888"],
+    "Parfums MDCI": ["MDCI Parfums"],
+    "Goldfield & Banks Australia": ["Goldfield & Banks"],
+    "Jovoy Paris": ["Jovoy"],
+    "Goutal": ["Annick Goutal"],
+    "Grès": ["Parfums Gres"],
+    "Salvatore Ferragamo": ["Ferragamo"],
+    "Jo Malone London": ["Jo Malone"],
+    "Montblanc": ["Mont Blanc"],
+    "Roja Dove": ["Roja", "Roja Parfums"]
+  },
+  "providerBrandCorrections": {
+    "Maison Francis": {
+      "canonical": "Maison Francis Kurkdjian",
+      "requiredNamePrefix": "Maison Francis Kurkdjian"
+    }
+  },
+  "displayNamePrefixes": {
+    "Carolina Herrera": ["CH"],
+    "Initio Parfums Prives": ["Initio"],
+    "Giorgio Armani": ["Armani", "Armani Prive", "Giorgio Armani Prive"],
+    "BDK Parfums": ["BDK"],
+    "Xerjoff": ["Xerjoff Casamorati", "Casamorati"],
+    "Yves Saint Laurent": ["YSL", "Yves Saint Laurant"],
+    "Maison Martin Margiela": [
+      "Replica",
+      "Maison Margiela Replica",
+      "Maison Martin Margiela Replica"
+    ]
+  },
+  "identityNoteAliases": {
+    "bergamot": ["Calabrian Bergamot", "Italian Bergamot", "Sicilian Bergamot"],
+    "sandalwood": [
+      "Australian Sandalwood",
+      "Mysore Sandalwood",
+      "Indian Sandalwood",
+      "Sandal Wood"
+    ],
+    "cedar": [
+      "Atlas Cedar",
+      "Virginia Cedar",
+      "Virginian Cedar",
+      "Texas Cedar",
+      "Cedarwood"
+    ],
+    "vetiver": [
+      "Haitian Vetiver",
+      "Java Vetiver Oil",
+      "Java Vetiver",
+      "Bourbon Vetiver"
+    ],
+    "neroli": ["Tunisian Neroli"],
+    "orange": ["Sicilian Orange", "Brazilian Orange"],
+    "mandarin orange": ["Mandarin", "Italian Mandarin", "Sicilian Mandarin"],
+    "lemon": ["Italian Lemon", "Sicilian Lemon", "Calabrian Lemon"],
+    "rose": ["Bulgarian Rose", "Turkish Rose", "Damask Rose", "May Rose"],
+    "jasmine": ["Egyptian Jasmine", "Indian Jasmine"],
+    "orange blossom": ["Orange Flower"],
+    "woody notes": ["Wood", "Woodsy Notes"],
+    "spicy notes": ["Spices"],
+    "water": ["Water Notes", "Watery Notes"],
+    "lemongrass": ["Lemon Grass", "West Indian Lemongrass"],
+    "olibanum frankincense": ["Frankincense", "Olibanum"],
+    "juniper berries": ["Juniper Berry", "Bagas de Zimbro"],
+    "pink pepper": ["Pink Peppercorn"],
+    "ambrette musk mallow": ["Ambrette", "Ambrette Seeds", "Musk Mallow"],
+    "vanilla": ["Vanila"],
+    "tonka bean": ["Tonka"],
+    "black currant": ["Blackcurrant"]
+  }
+}

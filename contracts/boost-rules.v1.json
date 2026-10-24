@@ -1,0 +1,26 @@
+{
+  "version": "original-v1",
+  "heavy": ["gourmand", "oriental", "amber", "spicy", "leather", "woody"],
+  "light": ["fresh", "aquatic", "citrus", "aromatic", "floral"],
+  "vocabulary": {
+    "gourmand": "gourmand",
+    "oriental": "oriental",
+    "amber": "amber",
+    "spicy": "spicy",
+    "leather": "leather",
+    "woody": "woody",
+    "fresh": "fresh",
+    "aquatic": "aquatic",
+    "citrus": "citrus",
+    "aromatic": "aromatic",
+    "floral": "floral",
+    "warm spicy": "spicy",
+    "fresh spicy": "spicy",
+    "white floral": "floral",
+    "yellow floral": "floral"
+  },
+  "amounts": {
+    "heavy": ["2ml", "3–4ml", "5ml"],
+    "light": ["1ml", "2ml", "3ml"]
+  }
+}

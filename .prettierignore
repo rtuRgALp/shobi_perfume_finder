@@ -1,0 +1,8 @@
+node_modules
+dist
+_reference
+/data/
+/public/
+pnpm-lock.yaml
+test-results
+LICENSE
