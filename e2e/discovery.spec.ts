@@ -1,5 +1,38 @@
 import { test, expect } from "@playwright/test";
 
+test("apostrophes appear in search and details, and shopping links have no preset options", async ({
+  page,
+}) => {
+  await page.goto("/#/?q=Angels%20Share");
+  const card = page.locator(".perfume-card").filter({ hasText: "1508-KIL" });
+  await expect(card.locator("h3")).toHaveText("Angels' Share");
+  await card.locator("h3 a").click();
+  await expect(
+    page.getByRole("heading", { name: "Angels' Share", exact: true }),
+  ).toBeVisible();
+  await expect(page).toHaveTitle(
+    "Angels' Share by By Kilian — Shobi Perfume Finder",
+  );
+  const shoppingLink = page.getByRole("link", {
+    name: "View on Shobi",
+    exact: false,
+  });
+  await expect(shoppingLink).toHaveAttribute(
+    "href",
+    "https://leparfum.com.gr/en/fragrances-for-women/1508-kil-wp",
+  );
+  await page.goto("/#/perfume/shobi-5025");
+  await expect(
+    page.getByRole("heading", {
+      name: "Angels' Share On The Rocks",
+      exact: true,
+    }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "View on Shobi", exact: false }),
+  ).toHaveAttribute("href", /^[^#]+$/);
+});
+
 test("browser history restores URL-backed sorting and search", async ({
   page,
 }) => {

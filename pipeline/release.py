@@ -3,6 +3,7 @@ import os
 import shutil
 from .model import DATA, PUBLIC, ROOT, digest, read, validate_profiles, write
 from .display_names import restore_display_names
+from .listing_urls import clean_listing_urls
 
 
 def index_record(p):
@@ -19,7 +20,7 @@ def index_record(p):
 
 def build(profiles=None, public=PUBLIC, data=DATA):
     profiles = profiles if profiles is not None else read(data / "catalog/profiles.json")
-    profiles = sorted(restore_display_names(profiles), key=lambda p: p["id"])
+    profiles = sorted(clean_listing_urls(restore_display_names(profiles)), key=lambda p: p["id"])
     validate_profiles(profiles)
     rules = read(ROOT / 'contracts/boost-rules.v1.json')
     index = {"schemaVersion": 1, "perfumes": [index_record(p) for p in profiles]}

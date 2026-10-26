@@ -14,7 +14,10 @@ def restore_display_names(profiles):
         if (profile['fragranticaId'] != rule['fragranticaId'] or profile['brand'] != rule['brand']
                 or profile['name'] not in (rule['previousName'], rule['name'])):
             continue
-        if normalize(rule['previousName']) != normalize(rule['name']):
+        # Inherited labels also split contractions (Angel s) or omit terminal
+        # apostrophes (Angels). Reviewed rules may repair either representation,
+        # but must preserve every identity letter in order.
+        if normalize(rule['previousName']).replace(' ', '') != normalize(rule['name']).replace(' ', ''):
             raise ValueError('Display punctuation correction changes identity: ' + profile['id'])
         profile['name'] = rule['name']
         profile['nameAliases'] = sorted(set(profile.get('nameAliases', []) + [rule['previousName']]))

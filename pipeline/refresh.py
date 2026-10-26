@@ -4,6 +4,7 @@ import datetime as dt
 from urllib.parse import parse_qs, urlparse
 from .model import DATA, PUBLIC, evidence, read, validate_profiles, write
 from .release import build
+from .listing_urls import clean_listing_url
 from .sources import Client, SourceError, normalized, parse_fragrantica, parse_shobi
 
 
@@ -61,7 +62,7 @@ def reconcile_listings(profiles, live, review):
                 review.append({'kind': 'listing-identity-conflict', 'id': profile['id'], 'listing': row})
                 continue
         # Product ID and code agree. Preserve mapped original and update only official URL.
-        listing["url"] = row["url"]
+        listing["url"] = clean_listing_url(row["url"])
         listing["status"] = "active"
     # Absence from one collection never proves a known perfume was discontinued.
 

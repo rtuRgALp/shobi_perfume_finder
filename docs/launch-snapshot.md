@@ -43,7 +43,7 @@ Detailed candidates, raw responses, quota evidence and review reports remain pri
 
 This is a locally prepared production artifact. Hosting still requires configuring the GitHub repository and Pages deployment.
 
-Display punctuation repair: 46 source-attested perfume labels restore apostrophes missing in the inherited display names, including “King's Harem”. Corrections are pinned to stable original IDs and house names in `contracts/display-name-corrections.v1.json`; old labels remain searchable aliases. The release builder reapplies these reviewed corrections without changing listing codes, notes or favorites.
+Display punctuation repair: 91 source-attested perfume labels restore apostrophes missing in the inherited display names, including “King's Harem”. Corrections are pinned to stable original IDs and house names in `contracts/display-name-corrections.v1.json`; old labels remain searchable aliases. The release builder reapplies these reviewed corrections without changing listing codes, notes or favorites.
 
 ## Pyramid recovery follow-up
 
@@ -52,3 +52,7 @@ The field-level pass filled 366 additional complete pyramids, bringing complete 
 All 504 eligible missing-pyramid identities were revisited through exact original source pages. Among the remaining gaps, 116 readable original pages explicitly provide ungrouped “Fragrance Notes”, which were not turned into a pyramid. Other cases include incomplete extracts, partial layer listings and identity/edition holds. A source publishing one note list does not establish a layered composition. Known API candidates were rechecked; no additional approved fields were available from cache, and conflicting audience/edition candidates stayed held. This pass made no new paid API requests, leaving the last confirmed balance of 2,009 unchanged by our work.
 
 Interlude 53 Man now contains its explicitly sourced top, heart and base layers. The maintained field evidence points to the exact original profile. Raw observations, pre-pass backup and per-field operational reports remain private.
+
+## Shopping-link and punctuation follow-up
+
+An additional 45 display corrections include Angels' Share, Angels' Share On The Rocks, and missed French elisions and English contractions. Previous display labels remain searchable aliases. All 2,253 shopping links now omit inherited product-option fragments, so the finder does not request a preset bottle size or essence amount. Import, refresh and release generation apply the same URL cleanup; the retailer may still add its own option state after navigation.

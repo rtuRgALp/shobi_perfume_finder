@@ -11,6 +11,7 @@ import urllib.request
 from pathlib import Path
 from bs4 import BeautifulSoup
 from .model import read, write
+from .listing_urls import clean_listing_url
 
 
 def normalized(value):
@@ -152,7 +153,7 @@ def parse_shobi(html, base_url):
         url = urllib.parse.urljoin(base_url, link.get('href', ''))
         if urllib.parse.urlparse(url).hostname != "leparfum.com.gr":
             continue
-        products.append({"id": str(pid), "code": match.group(1), "url": url,
+        products.append({"id": str(pid), "code": match.group(1), "url": clean_listing_url(url),
             "description": description_text, "declaredOriginal": declared.group(1).strip() if declared else None})
     if not products:
         raise SourceError("No Shobi products parsed; collection may be incomplete or markup changed")

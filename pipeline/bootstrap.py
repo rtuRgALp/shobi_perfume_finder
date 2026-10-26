@@ -2,6 +2,7 @@
 import shutil
 from pathlib import Path
 from .model import DATA, PUBLIC, ROOT, evidence, read, write
+from .listing_urls import clean_listing_url
 
 
 def js_map(path):
@@ -62,7 +63,7 @@ def bootstrap(reference=None):
             "validationStatus": row["validationStatus"], "validationIssues": row.get("validationIssues", []),
             "validationChecks": checks,
             "listings": [{"id": str(row["prestashopProductId"]), "code": code,
-                "aliases": aliases.get(code, []), "url": row["shobiUrl"], "status": "active",
+                "aliases": aliases.get(code, []), "url": clean_listing_url(row["shobiUrl"]), "status": "active",
                 "originalId": "shobi-" + str(row["prestashopProductId"]),
                 "addedDate": recent.get(code), "bestSellerRank": ranks.get(code)}]
         })
