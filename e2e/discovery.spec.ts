@@ -1,5 +1,20 @@
 import { test, expect } from "@playwright/test";
 
+test("First Instinct links to the verified current Shobi product", async ({
+  page,
+}) => {
+  await page.goto("/#/perfume/shobi-1895");
+  await expect(
+    page.getByRole("heading", { name: "First Instinct", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("link", { name: "View on Shobi", exact: false }),
+  ).toHaveAttribute(
+    "href",
+    "https://leparfum.com.gr/en/fragrances-for-men/first-instinct-type",
+  );
+});
+
 test("apostrophes appear in search and details, and shopping links have no preset options", async ({
   page,
 }) => {

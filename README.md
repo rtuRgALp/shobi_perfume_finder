@@ -26,6 +26,10 @@ pnpm test:e2e
 
 `python -m pipeline.cli bootstrap` is a one-time import from the supplied MarvvRed reference tree. It resets enrichment, so use `build` or `refresh` for normal work. `build` is deterministic for identical catalog inputs and does not fetch sources. `rollback` swaps the current and previous release pointers.
 
+Shopping links use reviewed corrections pinned to the original profile ID, Shobi product ID, listing code and previous URL in `contracts/listing-url-corrections.v1.json`. Every release reapplies these corrections after removing preset product-option fragments. Designer names are not removed automatically: working URLs retain their established destinations.
+
+To explicitly audit designer-bearing and other descriptive shopping URLs, run `python -m pipeline.link_audit` (`--resume` continues an interrupted audit). This read-only operation rate-limits retailer requests, checks product IDs and listing codes, and verifies replacement canonical URLs directly. Its private report and HTML receipts go to ignored `data/raw/link-audit/`. Review proposed corrections before updating the contract; normal builds and deployment never run this network audit. See [the shopping-link audit](docs/shopping-link-audit.md) for the reviewed results.
+
 ## Application structure
 
 - `src/features`: discovery/filtering, details, favorites and pure Essence Boost rules.
@@ -72,7 +76,7 @@ The workflow tests and builds before deployment, retains the previous release, u
 
 The earlier Fragella trial is a separate process with a persistent 20-request ceiling. The launch collector above has its own budget and reuses available research candidates for resolution. See [accord API evaluation](docs/accord-api-evaluation.md) for the provider assessment and initial trial results.
 
-Source availability is outside this project's control. The implementation was exercised against live Fragrantica HTML and source-access failures. Shobi retrieval failed from the development environment; its adapter has fixture coverage, but successful full live Shobi collection remains to be verified. The refresh report records the precise coverage and failures for each run.
+Source availability is outside this project's control. The implementation was exercised against live Fragrantica HTML and source-access failures. Shobi's individual product pages have been checked live by the shopping-link audit; successful full live collection through the separate pagination adapter remains to be verified. The refresh report records the precise coverage and failures for each run.
 
 See [architecture and operations](docs/architecture.md) for evidence rules, review and recovery.
 

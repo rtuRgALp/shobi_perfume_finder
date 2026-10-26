@@ -30,4 +30,26 @@ describe("pipeline/frontend contract compatibility", () => {
       expect(profile.mainNotes).toEqual(p.mainNotes);
     });
   });
+  it("publishes every reviewed shopping-link correction", () => {
+    const manifest = JSON.parse(
+      readFileSync("public/data/current.json", "utf8"),
+    );
+    const rules = JSON.parse(
+      readFileSync("contracts/listing-url-corrections.v1.json", "utf8"),
+    );
+    expect(rules.mappings.length).toBeGreaterThan(0);
+    for (const rule of rules.mappings) {
+      const profile = profileSchema.parse(
+        JSON.parse(
+          readFileSync(
+            `public/${manifest.basePath}${manifest.profilePath}${rule.id}.json`,
+            "utf8",
+          ),
+        ),
+      );
+      const listing = profile.listings.find((l) => l.id === rule.listingId);
+      expect(listing?.code).toBe(rule.code);
+      expect(listing?.url).toBe(rule.url);
+    }
+  });
 });
