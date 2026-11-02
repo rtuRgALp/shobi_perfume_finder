@@ -186,6 +186,14 @@ def resolve(profiles, provider_rows, reviewed=None):
                     and manual['providerId'] == item['profile'].get('_id')
                     and reasons == ['gender-conflict']):
                 reviewed_match = dict(item, identityReview=manual['reason'])
+            if (manual and manual.get('retailerAccords')
+                    and manual['fragranticaId'] == profile['fragranticaId']
+                    and manual['providerId'] == item['profile'].get('_id')
+                    and manual.get('retailerSource') in [l['url'] for l in profile['listings']]
+                    and reasons == ['insufficient-note-corroboration']
+                    and len(manual['retailerAccords']) >= 3
+                    and set(manual['retailerAccords']) <= set(item['profile'].get('Main Accords', []))):
+                reviewed_match = dict(item, identityReview=manual['reason'], identityMethod='reviewed-retailer-identity-split')
             if not reasons:
                 matches.append(item)
             elif 'name-or-edition-mismatch' not in reasons:
@@ -285,7 +293,7 @@ def run(publish=False):
               'excludedProviderRecords': EXCLUSIONS,
               'retainedFieldDisagreements': conflicts,
               'mappings': {identity: {'providerId': r['profile']['_id'], 'retrievedAt': r['retrievedAt'],
-                                      'identityMethod': 'reviewed-audience-discrepancy' if r.get('identityReview') else ALIASES['version']} for identity, r in accepted.items()}}
+                                      'identityMethod': r.get('identityMethod', 'reviewed-audience-discrepancy' if r.get('identityReview') else ALIASES['version'])} for identity, r in accepted.items()}}
     write(DATA / 'reports/fragella-resolution.json', report)
     write(OUTPUT / 'unresolved-ids.json', [r['id'] for r in reviews])
     write(OUTPUT / 'proposed-mappings.json', report['mappings'])

@@ -30,6 +30,18 @@
       "providerId": "Comme-Des-Garcons-Wonderwood",
       "reason": "Reviewed exact Wonderwood / Comme des Garçons identity, edition wording and inherited-note overlap. The provider audience label differs for this same original; retain inherited audience and label imported fields as provider estimates."
     },
+    "shobi-191": {
+      "fragranticaId": "2056",
+      "providerId": "The-One",
+      "reason": "Reviewed separate men’s Shobi 1099-DOL MP identity. Retailer accords corroborate the men’s provider record after withdrawal of women’s Social Card notes. Provider year is inconsistent with EDT launch year; no year or concentration is asserted.",
+      "retailerAccords": [
+        "amber",
+        "tobacco",
+        "aromatic",
+        "citrus"
+      ],
+      "retailerSource": "https://leparfum.com.gr/en/fragrances-for-men/1099-dol-mp"
+    },
     "shobi-2093": {
       "fragranticaId": "31396",
       "providerId": "Penhaligon's-Halfeti",

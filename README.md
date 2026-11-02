@@ -43,7 +43,7 @@ URLs use hash routes and work beneath a GitHub Pages repository subdirectory. Se
 
 ## Data and recommendations
 
-The baseline contains **2,253 perfumes: 2,247 green and six intentionally yellow**, plus 25 documented duplicate-code aliases. Main Notes retain their certified Social Card order. Note pyramids are independently sourced fields and never replace Main Notes.
+The baseline contains **2,253 perfumes: 2,247 green and six intentionally yellow**, plus 25 documented duplicate-code aliases. A reviewed correction restores 566-DOL WP separately from 1099-DOL MP, bringing the current catalog to **2,254 perfumes** and 24 duplicate aliases. Published audience labels follow Shobi’s MP/WP/EL codes; N and LUX identify lines. See [listing audience corrections](docs/listing-audiences.md). Main Notes retain their certified Social Card order. Note pyramids are independently sourced fields and never replace Main Notes.
 
 Every enrichment field carries its own source, retrieval time and evidence state. Missing descriptions, accords, rating, longevity and sillage remain unavailable; neither the interface nor the pipeline invents them. Community measurements describe the original perfume, not Shobi's interpretation. Main accords in the legacy original database are not imported as verified facts.
 

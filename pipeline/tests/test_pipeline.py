@@ -20,7 +20,8 @@ class PipelineTests(unittest.TestCase):
         self.assertGreaterEqual(len(self.profiles), 2253)
         self.assertGreaterEqual(sum(p['validationStatus'] == 'green' for p in self.profiles), 2247)
         self.assertGreaterEqual(sum(p['validationStatus'] == 'yellow' for p in self.profiles), 6)
-        self.assertGreaterEqual(sum(len(r['aliases']) for p in self.profiles for r in p['listings']), 25)
+        # 566-DOL was restored as a distinct women's original, not a duplicate.
+        self.assertGreaterEqual(sum(len(r['aliases']) for p in self.profiles for r in p['listings']), 24)
         validate_profiles(self.profiles)
 
     def test_ordered_notes_are_unchanged(self):

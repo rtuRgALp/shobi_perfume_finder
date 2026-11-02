@@ -401,5 +401,13 @@
     "967-VICT",
     "972-VICT"
   ],
-  "scopeAudit": "database/catalog/catalog-wearable-original-scope-audit.json"
+  "scopeAudit": "database/catalog/catalog-wearable-original-scope-audit.json",
+  "reviewedCollapseReversals": [
+    {
+      "keptCode": "1099-DOL",
+      "reason": "Shobi 1099-DOL MP explicitly identifies the men’s The One with amber, tobacco, aromatic and citrus accords; 566-DOL WP is the separate women’s listing. The inherited FID 698 and women’s image, Social Card notes, season and enrichment were incorrectly merged. Withdraw them from 1099-DOL; preserve them on restored listing 566-DOL. Historical certification is not recertification.",
+      "restoredCode": "566-DOL",
+      "restoredPrestashopProductId": "655"
+    }
+  ]
 }
