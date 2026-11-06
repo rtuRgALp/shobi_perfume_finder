@@ -151,15 +151,24 @@ test("reviewed identity corrections never show another perfume's notes or bottle
   await expect(
     page.getByRole("link", { name: "Read about the original on Fragrantica" }),
   ).toHaveAttribute("href", /721\.html$/);
-  await expect(
-    page.getByText("Main Notes are not yet available.", { exact: true }),
-  ).toBeVisible();
+  await expect(page.locator(".detail-notes span")).toHaveText([
+    "Yuzu", "Lemon", "Lotus", "Bergamot", "Vetiver", "Lemon Verbena",
+  ]);
   await expect(page.locator('img[src$="79.avif"]')).toHaveCount(0);
   await expect(page.locator(".boost-amounts strong")).toHaveText([
     "+2ml",
     "+3–4ml",
     "+5ml",
   ]);
+});
+
+test("The One men's listing shows its reviewed notes instead of the women's notes", async ({ page }) => {
+  await page.goto("/#/perfume/shobi-191");
+  await expect(page.locator(".detail-notes span")).toHaveText([
+    "Amber", "Tobacco", "Ginger", "Cardamom", "Grapefruit", "Cedar",
+  ]);
+  await expect(page.getByRole("link", { name: "Read about the original on Fragrantica" })).toHaveAttribute("href", /2056\.html$/);
+  await expect(page.locator('img[src$="698.avif"]')).toHaveCount(0);
 });
 
 test("favorites persist and compose with search", async ({ page }) => {

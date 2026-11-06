@@ -30,7 +30,15 @@ class PipelineTests(unittest.TestCase):
             self.skipTest('Reference trees are deliberately not required by CI')
         originals = {r['code']: r for r in read(source)}
         corrections = {r['id']: r for r in read(ROOT / 'contracts/reviewed-source-corrections.v1.json')['mappings'] if r.get('withdrawnMainNotes')}
+        reviewed = {r['id']: r for r in read(ROOT / 'contracts/reviewed-main-notes.v1.json')['reviews']}
         for p in self.profiles:
+            if p['id'] in reviewed:
+                review = reviewed[p['id']]
+                self.assertEqual(p['fragranticaId'], review['fragranticaId'])
+                self.assertEqual(p['mainNotes'], review['notes'])
+                self.assertEqual(p['evidence']['mainNotes']['source'], review['source'])
+                self.assertEqual(p['evidence']['mainNotes']['status'], 'verified')
+                continue
             original = originals.get(p['listings'][0]['code'])
             if original:
                 correction = corrections.get(p['id'])

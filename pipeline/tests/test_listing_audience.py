@@ -36,7 +36,9 @@ class ListingAudienceTests(unittest.TestCase):
         self.assertEqual((men['fragranticaId'], men['gender']), ('2056','masculine'))
         self.assertEqual((women['fragranticaId'], women['gender']), ('698','feminine'))
         self.assertNotEqual(men['image'], women['image'])
-        self.assertEqual(men['mainNotes'], [])
+        self.assertEqual([n['name'] for n in men['mainNotes']],
+                         ['Amber', 'Tobacco', 'Ginger', 'Cardamom', 'Grapefruit', 'Cedar'])
+        self.assertEqual(men['evidence']['mainNotes']['status'], 'verified')
         self.assertIn('Tobacco', men['pyramid']['base'])
         self.assertNotIn('566-DOL', men['listings'][0]['aliases'])
         self.assertEqual(men['evidence']['accords']['status'], 'provider')
