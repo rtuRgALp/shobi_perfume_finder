@@ -1,4 +1,4 @@
-"""Apply reviewed, source-attested display punctuation without changing identity."""
+"""Apply reviewed source-attested name repairs at an exact original identity."""
 import copy
 from .fragella_trial import normalize
 from .model import ROOT, DATA, read, write
@@ -17,7 +17,13 @@ def restore_display_names(profiles):
         # Inherited labels also split contractions (Angel s) or omit terminal
         # apostrophes (Angels). Reviewed rules may repair either representation,
         # but must preserve every identity letter in order.
-        if normalize(rule['previousName']).replace(' ', '') != normalize(rule['name']).replace(' ', ''):
+        if rule.get('kind') == 'source-label':
+            # Description leaks and placeholder labels cannot be repaired by
+            # punctuation alone. Require a reviewed source and reason as well
+            # as the exact ID, brand, source ID and old-name guards above.
+            if not rule.get('source') or not rule.get('reason') or not rule['fragranticaId']:
+                raise ValueError('Source label correction lacks reviewed evidence: ' + profile['id'])
+        elif normalize(rule['previousName']).replace(' ', '') != normalize(rule['name']).replace(' ', ''):
             raise ValueError('Display punctuation correction changes identity: ' + profile['id'])
         profile['name'] = rule['name']
         profile['nameAliases'] = sorted(set(profile.get('nameAliases', []) + [rule['previousName']]))

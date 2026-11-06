@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { test, expect } from "@playwright/test";
 
 test("First Instinct links to the verified current Shobi product", async ({
@@ -295,4 +296,16 @@ test("corrupt storage, missing images and unavailable catalog fail gracefully", 
   await page.unroute("**/data/current.json");
   await page.getByRole("button", { name: "Try again" }).click();
   await expect(page.locator(".perfume-card")).toHaveCount(24);
+});
+
+
+test("reviewed source labels show original names on details and searchable cards", async ({ page }) => {
+  const rules = JSON.parse(readFileSync("contracts/display-name-corrections.v1.json", "utf8")).mappings.filter((r: {kind?: string}) => r.kind === "source-label");
+  for (const rule of rules) {
+    await page.goto(`/#/perfume/${rule.id}?brand=${encodeURIComponent(rule.brand)}`);
+    await expect(page.getByRole("heading", {name: rule.name, exact: true})).toBeVisible();
+    await expect(page.getByRole("heading", {name: rule.previousName, exact: true})).toHaveCount(0);
+  }
+  await page.goto("/#/?brand=Louis+Vuitton&q=California+Dream");
+  await expect(page.getByRole("heading", {name: "California Dream", exact: true})).toBeVisible();
 });

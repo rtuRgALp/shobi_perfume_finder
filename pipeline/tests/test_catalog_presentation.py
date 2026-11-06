@@ -61,3 +61,34 @@ class CatalogPresentationTests(unittest.TestCase):
             self.assertEqual(read(release / 'index.json')['perfumes'][0]['name'], published['name'])
             self.assertEqual(profile['name'], 'Angels Share')
 
+
+    def test_catalog_has_no_description_fragments_or_reviewed_placeholder_names(self):
+        import re
+        profiles = read(DATA / 'catalog/profiles.json')
+        contaminated = re.compile(r'\bfragrance\s+(?:for|[on]otes)\b|^the\s+(?:[on]otes|fragrance)\b|\b(?:perfumes|fragrances)$', re.I)
+        for profile in profiles:
+            self.assertIsNone(contaminated.search(profile['name']), profile['id'] + ': ' + profile['name'])
+        names = {p['id']: p['name'] for p in profiles}
+        self.assertEqual(names['shobi-2783'], 'California Dream')
+        self.assertEqual(names['shobi-3117'], 'Afternoon Swim')
+        self.assertEqual(names['shobi-659'], 'Dolce&Gabbana')
+        # These are actual perfume names, not descriptive contamination.
+        self.assertEqual(names['shobi-2696'], 'Not A Perfume')
+        self.assertEqual(names['shobi-640'], 'Coach the Fragrance')
+
+    def test_build_repairs_source_label_names_in_both_index_and_profile(self):
+        profiles = {p['id']: p for p in read(DATA / 'catalog/profiles.json')}
+        rules = [r for r in read(ROOT / 'contracts/display-name-corrections.v1.json')['mappings'] if r.get('kind') == 'source-label']
+        self.assertEqual(len(rules), 10)
+        legacy = [copy.deepcopy(profiles[r['id']]) for r in rules]
+        for profile, rule in zip(legacy, rules):
+            profile['name'] = rule['previousName']
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            manifest = build(legacy, public=root, data=root)
+            release = root / manifest['basePath']
+            index = {p['id']: p for p in read(release / 'index.json')['perfumes']}
+            for rule in rules:
+                published = read(release / ('profiles/' + rule['id'] + '.json'))
+                self.assertEqual(published['name'], rule['name'])
+                self.assertEqual(index[rule['id']]['name'], rule['name'])
