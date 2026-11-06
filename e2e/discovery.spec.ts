@@ -171,6 +171,26 @@ test("The One men's listing shows its reviewed notes instead of the women's note
   await expect(page.locator('img[src$="698.avif"]')).toHaveCount(0);
 });
 
+test("approved source notes fill all six remaining fragrance gaps", async ({ page }) => {
+  const recovered: Record<string, string[]> = {
+    "5083": ["Passionfruit", "Peach", "Green Pear", "Lily", "Sandalwood", "Vanilla"],
+    "3455": ["Neroli", "Tuberose", "Jasmine", "Sandalwood", "Musk"],
+    "1409": ["Agarwood (Oud)"],
+    "1220": ["Oak", "Red Cedar"],
+    "1143": ["Tangerine", "Pink Magnolia"],
+    "328": ["Citron", "Lavender", "Orchid", "Nutmeg", "Basil", "Allspice", "Oakmoss", "Amber", "Patchouli"],
+  };
+  for (const [id, notes] of Object.entries(recovered)) {
+    await page.goto(`/#/perfume/shobi-${id}`);
+    await expect(page.locator(".detail-notes span")).toHaveText(notes);
+    await expect(page.getByText("Main Notes are not yet available.", { exact: true })).toHaveCount(0);
+    for (const img of await page.locator(".detail-notes img").all()) {
+      await img.scrollIntoViewIfNeeded();
+      await expect.poll(() => img.evaluate((node: HTMLImageElement) => node.complete && node.naturalWidth > 0)).toBe(true);
+    }
+  }
+});
+
 test("favorites persist and compose with search", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator(".perfume-card")).toHaveCount(24);
